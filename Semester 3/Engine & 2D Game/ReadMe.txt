@@ -14,7 +14,7 @@ Libraries Used
 
  1) SDL2				https://www.libsdl.org 
  2) Box2D				https://box2d.org 
- 3) glm				  https://glm.g-truc.net/0.9.9/index.html
+ 3) glm				        https://glm.g-truc.net/0.9.9/index.html
 
 
 How to use
