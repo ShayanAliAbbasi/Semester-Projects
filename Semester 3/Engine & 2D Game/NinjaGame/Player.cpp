@@ -72,9 +72,11 @@ void Player::update(Shingine::Camera1D* camera, Shingine::InputManager* inputMan
 	// Applying forces to player on certain keyPresses
 	if (inputManager->isKeyDown(SDLK_RIGHT)) {
 		m_box.applyForceToCenter(glm::ivec2(m_speed, 0));
+		m_dir = Direction::RIGHT;
 	}
 	else if (inputManager->isKeyDown(SDLK_LEFT)) {
 		m_box.applyForceToCenter(glm::ivec2(-m_speed, 0));
+		m_dir = Direction::LEFT;
 	}
 	else {
 		glm::vec2 vel = m_box.getVelocity();
@@ -131,11 +133,6 @@ void Player::update(Shingine::Camera1D* camera, Shingine::InputManager* inputMan
 	}
 	else if (fabs(m_box.getVelocity().x) > 0.0f) {
 		m_stance = MOVING;
-
-		if (m_box.getVelocity().x < 0.0f)
-			m_dir = LEFT;
-		else
-			m_dir = RIGHT;
 	}
 
 	// Setting different animations && stuff based on different stances, states set above
