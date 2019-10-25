@@ -212,6 +212,11 @@ void GamePlayScreen::update()  {
 void GamePlayScreen::draw() {
 
 	static bool pauseAnimation = false;
+	
+	// Draw rotating shurikens as background
+	if (!m_showExitMenu && !m_gameWon && !m_gameLost) {
+		animateBackground();
+	}
 
 	if (m_showExitMenu) {
 		m_pauseText.render("game paused");
@@ -239,12 +244,6 @@ void GamePlayScreen::draw() {
 		}
 
 		pauseAnimation = false;
-	}
-
-
-	// Draw rotating shurikens as background
-	if (!m_showExitMenu && !m_gameWon && !m_gameLost) {
-		animateBackground();
 	}
 
 	m_ground.debugRender({33, 51, 248, 255});
