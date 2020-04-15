@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Enemy_Bullet
+  - Boundary
+  - Player_Bullet
+  - Sky
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Player
+  - Boundary
+  - Enemy
+  - Bullet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Boundary
+    uniqueID: 423097599
+    locked: 0
+  - name: Background
+    uniqueID: 1021485125
+    locked: 0
+  - name: Enemy
+    uniqueID: 1917799365
+    locked: 0
+  - name: Player
+    uniqueID: 4246942235
+    locked: 0
+  - name: Bullet
+    uniqueID: 382858063
+    locked: 0
